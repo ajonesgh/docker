@@ -1,0 +1,7 @@
+nginx:
+  image: sameersbn/nginx:1.15.12-0
+  ports:
+    - "80:80"
+  volumes:
+    - /srv/docker/nginx/sites-enabled:/etc/nginx/sites-enabled
+  restart: always

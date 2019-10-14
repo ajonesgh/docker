@@ -1,0 +1,12 @@
+db:
+  image: mysql:5.5.60
+  volumes:
+    - dbdata:/var/lib/mysql
+  environment:
+    - "MYSQL_DATABASE=db1"
+    - "MYSQL_USER=admin"
+    - "MYSQL_PASSWORD=123"
+    - "MYSQL_ROOT_PASSWORD=123"
+  ports:
+      - "33061:3306"
+  restart: always
